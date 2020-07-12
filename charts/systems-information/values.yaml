@@ -1,8 +1,8 @@
 replicaCount: 1
 
 image:
-  repository: docker.io/cube8021/rancher-systems-information
-  tag: v0.0.1-rc2
+  repository: docker.io/aemneina/rancher-systems-information
+  tag: latest
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
@@ -31,7 +31,7 @@ smtp_user: ""
 smtp_pass: ""
 
 rancher_name: ""
-schedule: "0 0 * * 1"
+schedule: "10,20,30,40,50,0 * * * *"
 smtp_host: ""
 smtp_port: "587"
 to_address: ""
