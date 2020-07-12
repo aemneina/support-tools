@@ -85,3 +85,9 @@ questions:
   label: From address
   required: true
   group: "Mail Server Settings"
+- variable: rancher_namespace
+  default: "cattle-system"
+  type: string
+  label: Rancher namespace
+  require: false
+  group: "General Settings"
