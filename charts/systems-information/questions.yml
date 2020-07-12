@@ -14,18 +14,18 @@ questions:
   group: "Container Images"
   subquestions:
   - variable: image.repository
-    default: "docker.io/cube8021/rancher-systems-information"
+    default: "docker.io/aemneina/rancher-systems-information"
     description: "Docker image repository"
     type: string
     label: Image Repository
   - variable: image.tag
-    default: "v0.0.1-rc1"
+    default: "latest"
     description: "Docker image tag"
     type: string
     label: Image Tag
 - variable: schedule
   required: true
-  default: '0 0 * * 1'
+  default: '0,10,20,30,40,50 * * * *'
   description: "Backup schedule in crontab format"
   type: string
   label: "Backup schedule"
@@ -44,7 +44,7 @@ questions:
   required: true
   group: "General Settings"
 - variable: send_to_support
-  default: "true"
+  default: "false"
   description: "Would you like this report sent to Rancher Support?"
   type: string
   label: Send report to Rancher Support
