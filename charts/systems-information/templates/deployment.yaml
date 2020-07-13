@@ -10,6 +10,8 @@ spec:
         spec:
           containers:
           - env:
+            - name: rancher_namespace
+              value: {{ .Values.from_address | quote }}
             - name: from_address
               value: {{ .Values.from_address | quote }}
             - name: rancher_name
