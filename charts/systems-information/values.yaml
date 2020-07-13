@@ -31,7 +31,7 @@ smtp_user: ""
 smtp_pass: ""
 
 rancher_name: ""
-schedule: "10,20,30,40,50,0 * * * *"
+schedule: "0 0 * * 0"
 smtp_host: ""
 smtp_port: "587"
 to_address: ""

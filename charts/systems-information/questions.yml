@@ -25,7 +25,7 @@ questions:
     label: Image Tag
 - variable: schedule
   required: true
-  default: '0,10,20,30,40,50 * * * *'
+  default: '0 0 * * 0'
   description: "Backup schedule in crontab format"
   type: string
   label: "Backup schedule"
