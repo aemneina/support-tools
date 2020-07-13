@@ -50,6 +50,13 @@ questions:
   label: Send report to Rancher Support
   required: false
   group: "General Settings"
+- variable: rancher_namespace
+  default: "cattle-system"
+  description: "Namespace of Rancher Pods"
+  type: string
+  label: Rancher Namespace
+  required: false
+  group: "General Settings"
 - variable: smtp_host
   default: ""
   description: "SMTP server hostname"
@@ -85,9 +92,3 @@ questions:
   label: From address
   required: true
   group: "Mail Server Settings"
-- variable: rancher_namespace
-  default: "cattle-system"
-  type: string
-  label: Rancher namespace
-  require: false
-  group: "General Settings"
